@@ -14,8 +14,6 @@ int main () {
 		string temp;
 		cin >> temp;
 		numbers.push_back(temp);
-//		string s ="";
-//		output.push_back(s);
 	}
 
 	// working with the input 
