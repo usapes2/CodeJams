@@ -7,6 +7,7 @@ using namespace std;
 
 int main () {
 	vi v;	
+	vs s;
 	int t;
 	cin >> t; // read t. cin knows 
 	for ( int i = 0; i < t ; ++i) {
