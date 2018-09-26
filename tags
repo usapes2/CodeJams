@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+IsLessThan	LowerBoundSTL/main.cpp	/^        IsLessThan (double x = 0.0) : val(x) {}$/;"	f	class:IsLessThan
+IsLessThan	LowerBoundSTL/main.cpp	/^class IsLessThan{$/;"	c	file:
+ListNode	addTwoNumbers.cpp	/^      ListNode(int x) : val(x), next(NULL) {}$/;"	f	struct:ListNode
+ListNode	addTwoNumbers.cpp	/^struct ListNode {$/;"	s	file:
+addTwoNumbers	addTwoNumbers.cpp	/^ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {$/;"	f
+containsDuplicate	containsduplicate.cpp	/^bool containsDuplicate(vector<int>& nums) {$/;"	f
+helper_h	LowerBoundSTL/helper.h	3;"	d
+helper_h	vector-erase/helper.h	3;"	d
+m_iter	maps_stl/mapsSTL.cpp	/^    typedef map<string,int>::iterator m_iter;$/;"	t	file:
+m_iter	sumoftwo.cpp	/^typedef map<int,int>::iterator m_iter;$/;"	t	file:
+main	LowerBoundSTL/main.cpp	/^int main () {$/;"	f
+main	TydyNumbers.cpp	/^int main () {$/;"	f
+main	addTwoNumbers.cpp	/^int main () {$/;"	f
+main	containsduplicate.cpp	/^int main () {$/;"	f
+main	cpp_sets/stl_sets.cpp	/^int main () {$/;"	f
+main	cpp_sets/stl_sets_switch.cpp	/^int main () {$/;"	f
+main	maps_stl/mapsSTL.cpp	/^int main() {$/;"	f
+main	rotateArray.cpp	/^int main() {$/;"	f
+main	sumoftwo.cpp	/^int main() {$/;"	f
+main	vector-erase/main.cpp	/^int main () {$/;"	f
+next	addTwoNumbers.cpp	/^      ListNode *next;$/;"	m	struct:ListNode	file:
+operator ()	LowerBoundSTL/main.cpp	/^        bool operator() (double x) const$/;"	f	class:IsLessThan
+pr	LowerBoundSTL/helper.cpp	/^void pr(vi v) {$/;"	f
+pr	rotateArray.cpp	/^void pr(vector<int> v) {$/;"	f
+pr	vector-erase/helper.cpp	/^void pr(vi v) {$/;"	f
+print	addTwoNumbers.cpp	/^void print ( ListNode node) {$/;"	f
+rotate	rotateArray.cpp	/^void rotate(vector<int>& nums,int k) {$/;"	f
+si_itr	cpp_sets/stl_sets.cpp	/^typedef set<int>::iterator si_itr;\/\/ set integer itr$/;"	t	file:
+si_itr	cpp_sets/stl_sets_switch.cpp	/^typedef set<int>::iterator si_itr;\/\/ set integer itr$/;"	t	file:
+twoSum	sumoftwo.cpp	/^vector<int> twoSum(vector<int>& nums, int target){$/;"	f
+val	LowerBoundSTL/main.cpp	/^        double val;$/;"	m	class:IsLessThan	file:
+val	addTwoNumbers.cpp	/^      int val;$/;"	m	struct:ListNode	file:
+vi	LowerBoundSTL/helper.h	/^typedef std::vector<int> vi;$/;"	t
+vi	LowerBoundSTL/main.cpp	/^typedef std::vector<int> vi;$/;"	t	file:
+vi	vector-erase/helper.h	/^typedef std::vector<int> vi;$/;"	t
+vi_iter	LowerBoundSTL/main.cpp	/^typedef std::vector<int>::const_iterator vi_iter;$/;"	t	file:
+vi_sz	LowerBoundSTL/helper.cpp	/^typedef std::vector<int>::size_type vi_sz;$/;"	t	file:
+vi_sz	LowerBoundSTL/main.cpp	/^typedef std::vector<int>::size_type vi_sz;$/;"	t	file:
+vi_sz	vector-erase/helper.cpp	/^typedef std::vector<int>::size_type vi_sz;$/;"	t	file:
+vi_sz	vector-erase/main.cpp	/^typedef std::vector<int>::size_type vi_sz;$/;"	t	file:
+vs	LowerBoundSTL/helper.h	/^typedef std::vector<std::string> vs;$/;"	t
+vs	vector-erase/helper.h	/^typedef std::vector<std::string> vs;$/;"	t
