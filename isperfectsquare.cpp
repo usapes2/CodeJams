@@ -1,4 +1,4 @@
-/* Finding perfectct square 2 methods 
+/* Finding perfectct square 2 methods
  * liner time o(n)
  * lon(n) bisections
  */
@@ -11,10 +11,10 @@ using namespace std;
 /*
 bool isPerfectSquare(int num) {
         int j = 1;
-        
+
         while (j*j<=num){
             if (j*j==num){
-                return true;    
+                return true;
             }
             j++;
         }
@@ -24,37 +24,37 @@ bool isPerfectSquare(int num) {
 
 bool isPerfectSquare(int num) {
 
-	int left = 1;
-	int right = num;
+    int left = 1;
+    int right = num;
 
-	while (left <= right) {
+    while (left <= right) {
 
-		int mid = floor((right + left)/ 2 );
+        int mid = floor((right + left) / 2 );
 
-		cout << "Mid: " <<mid<<endl;
+        cout << "Mid: " << mid << endl;
 
-		if (mid*mid > num) {
-			right = mid -1;
-			cout << "<-"<<endl;
+        if (mid * mid > num) {
+            right = mid - 1;
+            cout << "<-" << endl;
 
-		} else if ( mid*mid == num){
-			cout << " catch " <<endl;
-			return true;
+        } else if ( mid * mid == num) {
+            cout << " catch " << endl;
+            return true;
 
-		} else if (mid*mid < num ){
-			cout << " -> " <<endl;
-			left = mid +1;
-		}
+        } else if (mid * mid < num ) {
+            cout << " -> " << endl;
+            left = mid + 1;
+        }
 
-		}
-	return false;
-	}
+    }
+    return false;
+}
 
 
-	
+
 
 int main(int argc, const char *argv[])
 {
-	cout << isPerfectSquare(100) << endl;	
-	return 0;
+    cout << isPerfectSquare(100) << endl;
+    return 0;
 }
