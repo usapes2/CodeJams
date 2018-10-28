@@ -1,48 +1,49 @@
+/*
+Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
+*/
+
 #include<iostream>
 #include<map>
 #include<set>
 #include<string>
 #include<algorithm>
 #include<vector>
+#include<deque>
+
 using namespace std;
 
 vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-	
+
 	vector<int> ret;
+	deque<int> deck;
 
-	vector<int> window(nums.begin(),nums.begin()+k);
+	int i = 0;
+	for (i; i < nums.size(); i++) {
+		while (!deck.empty() && deck.back() < nums[i]) {	deck.pop_back(); }
+		deck.push_back(nums[i]);
 
-	make_heap(begin(window),end(window));
+		if (i >= k - 1 ) {
 
-	ret.push_back(window.front());
+			ret.push_back(deck.front());
 
-	for (int i = k; i < nums.size(); i++) {
+			if (nums[i - k + 1] == deck.front())  {
+				deck.pop_front();
+			}
+		}
 
-		window[0] = nums[i];	
-
-		push_heap(begin(window),end(window));
-
-		ret.push_back(window.front());
 	}
-
 	return ret;
-        
-} 
+
+}
 
 
 int main(int argc, const char *argv[])
 {
-	vector<int> nums = { 1,3,-1,-3,5,3,6,7 };
-	int k = 3;
-	vector<int> v(nums.begin(),nums.begin()+k);
+	vector<int> nums = {1, 3, -1, -3, 5, 3, 6, 7};
 
-	make_heap(begin(v),end(v));
-	
-	cout << v.front() <<endl;
-	v.push_back(10);
-	push_heap(begin(v),end(v));
-	cout << v.front() <<endl;
-	cout << v[4] <<endl;
-
+	vector<int> ret = maxSlidingWindow(nums, 3) ;
+	for (auto i : ret) {
+		cout << i << endl;
+	}
 	return 0;
 }
