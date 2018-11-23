@@ -47,10 +47,10 @@ int binary_search(const std::vector<Item_Type>& items,
 
 int main(int argc, const char *argv[])
 {
-	vector<int> vi = {
-		1,2,3,4,5,99
+	vector<char> vs = {
+		'a','b','c','d'
 	};
-	cout << binary_search(vi,99);
+	cout << binary_search(vs, 'b');
 	
 	return 0;
 }
