@@ -57,10 +57,9 @@ int main() {
 	v.push_back(5);
 	v.push_back(6);
 	v.push_back(7);
-	v.push_back(8);
 	pr(v);
 	cout << " \n Rotate \n";
-	rotate(v,3);
+	rotate(v,1);
 	pr(v);
 
 		
