@@ -40,8 +40,12 @@ bool validMountainArray(vector<int> A) {
  while(i + 1 < n && A[i] < A[i+1]) i++;
  while(j > 0 && A[j - 1] > A[j]) j--;
  return i > 0 && i == j && j < n - 1;
-
    */
+
+bool validM(vector<int>& A) {
+
+}
+
 int main(int argc, const char *argv[])
 {
 	cout << validMountainArray({9,8,7,6,5,4,3,2,1});
