@@ -1,0 +1,30 @@
+'''
+You want to make a list of the largest or smallest N items in a collection
+heapq module has two function - nlargest() and nsmallest() 
+'''
+
+import heapq
+
+nums = [1,8,2,23,7,-4,18,23,42,37,2]
+
+
+print(heapq.nlargest(3,nums))
+print(heapq.nsmallest(3,nums))
+
+'''
+Both functions also accept a key parameter tha allows them to be used with more complicated
+data structures. For example:
+'''
+
+portfolio = [
+
+        {'name': 'IBM','shares':100,'price': 91.1 },
+        {'name': 'I','shares':10,'price': 16.1 },
+        {'name': 'AAPL','shares':50 ,'price': 543.22 },
+        {'name':'F' ,'shares':500 ,'price':1.09 },
+        {'name': 'AA','shares': 5000 ,'price': 43.22 },
+        {'name':'FB' ,'shares':200 ,'price':21.09 }
+
+        ]
+
+cheap = heapq.nsmallest(3,portfolio, key = lambda s: s['price']) 
