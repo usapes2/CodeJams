@@ -1,0 +1,22 @@
+
+
+li = [] 
+lii = [ 1 ] 
+
+lii.append(2)
+
+tweets = {}
+
+from collections import defaultdict
+from collections import deque
+q = lambda: deque(maxlen = 3 )
+
+tweets = defaultdict(q)
+tweets[1].append(1)
+tweets[1].append(2)
+tweets[1].append(3)
+tweets[1].append(4)
+tweets[1].append(5)
+tweets[1].append(6)
+print(tweets[1])
+
